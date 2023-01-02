@@ -1,2 +1,3 @@
 secure/Dashboard.jspa
 geoserver/web/
+cgi-mod/index.cgi?locale=en_US
