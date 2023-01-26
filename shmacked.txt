@@ -1,0 +1,6 @@
+app/logs/webapp.log
+logs/webapp.log
+webapp.log
+webapp
+app
+logs
