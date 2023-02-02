@@ -4,3 +4,13 @@ webapp.log
 webapp
 app
 logs
+log
+production
+log/production.log
+config
+app_env.yml
+config/app_env.yml
+database.yml
+config/database.yml
+secrets.yml
+config/secrets.yml
