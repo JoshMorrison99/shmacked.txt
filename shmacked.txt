@@ -14,3 +14,6 @@ database.yml
 config/database.yml
 secrets.yml
 config/secrets.yml
+admin.zip
+backup.zip
+adnim.zip
