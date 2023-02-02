@@ -17,3 +17,16 @@ config/secrets.yml
 admin.zip
 backup.zip
 adnim.zip
+users.txt
+users.zip
+logs/users.txt
+logs/users
+logs/users.zip
+console
+adminconsole
+install
+admin/install
+adminconsole/install
+adminconsole/install.htm
+jk_status
+admin.tar.gz
