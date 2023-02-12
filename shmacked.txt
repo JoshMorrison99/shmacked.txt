@@ -30,3 +30,8 @@ adminconsole/install
 adminconsole/install.htm
 jk_status
 admin.tar.gz
+appsettings.json
+appsettings.Development.json
+appsettings.Production.json
+swagger
+swagger/index.html
