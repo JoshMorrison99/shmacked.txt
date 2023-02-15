@@ -35,3 +35,6 @@ appsettings.Development.json
 appsettings.Production.json
 swagger
 swagger/index.html
+wp-config.php
+wp-config.php.bk
+.env
