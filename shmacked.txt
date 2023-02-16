@@ -38,3 +38,4 @@ swagger/index.html
 wp-config.php
 wp-config.php.bk
 .env
+proxy
