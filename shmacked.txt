@@ -40,3 +40,12 @@ wp-config.php.bk
 .env
 proxy
 mysql.env
+install.php
+core/install.php
+config.json
+config.yaml
+config.yml
+config.txt
+debug
+debug.json
+debug.txt
