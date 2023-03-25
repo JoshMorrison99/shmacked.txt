@@ -8,7 +8,6 @@
 \x27\x6F\x72 SELECT *
 'or select *
 admin'--
-';shutdown--
 <>"'%;)(&+
 ' or ''='
 ' or 'x'='x
