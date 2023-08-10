@@ -1,4 +1,6 @@
-app/logs/webapp.log
+| Word | Reason |
+|------|--------|
+app/logs/webapp.log | Log file 
 logs/webapp.log
 webapp.log
 webapp
@@ -33,14 +35,15 @@ admin.tar.gz
 appsettings.json
 appsettings.Development.json
 appsettings.Production.json
-swagger
-swagger/index.html
+swagger | Swagger endpoint for getting APIs
+swagger/index.html | Swagger endpoint for getting APIs
 wp-config.php
 wp-config.php.bk
-.env
-proxy
-mysql.env
-install.php
+.env | Stores sensitive information
+proxy | SSRF
+img/proxy | SSRF
+mysql.env | MySQL Database Disclosure
+install.php | Wordpress Installation
 core/install.php
 config.json
 config.yaml
@@ -49,3 +52,10 @@ config.txt
 debug
 debug.json
 debug.txt
+login | AWS Cognito
+mfa | AWS Cognito
+signup | AWS Cognito
+forgotPassword | AWS Cognito
+logout | AWS Cognito
+confirm | AWS Cognito
+error | AWS Cognito
